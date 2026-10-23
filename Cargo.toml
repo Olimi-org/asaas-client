@@ -3,6 +3,7 @@ name = "asaas-client"
 version = "1.0.0"
 edition = "2024"
 description = "Rust client generated from the Asaas OpenAPI spec using openapi-to-rust"
+repository = "https://github.com/Olimi-org/asaas-client"
 
 [dependencies]
 bytes = { version = "1", features = ["serde"] }
