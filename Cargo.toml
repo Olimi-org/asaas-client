@@ -5,6 +5,7 @@ edition = "2024"
 description = "Rust client generated from the Asaas OpenAPI spec using openapi-to-rust"
 license = "MIT"
 repository = "https://github.com/Olimi-org/asaas-client"
+exclude = ["bin/", "openapi-to-rust.toml", "regen.sh"]
 
 [dependencies]
 bytes = { version = "1", features = ["serde"] }
