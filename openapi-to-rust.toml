@@ -1,0 +1,11 @@
+[generator]
+spec_path = "openapi.json"
+output_dir = "src/generated"
+module_name = "asaas"
+
+[features]
+enable_async_client = true
+
+# Off: keeps the reqwest-tracing middleware out of the dependency set
+[http_client.tracing]
+enabled = false

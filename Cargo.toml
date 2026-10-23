@@ -1,0 +1,18 @@
+[package]
+name = "asaas-client"
+version = "1.0.0"
+edition = "2024"
+description = "Rust client generated from the Asaas OpenAPI spec using openapi-to-rust"
+
+[dependencies]
+bytes = { version = "1", features = ["serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+futures-util = "0.3"
+reqwest = { version = "0.13", default-features = false, features = ["multipart", "query", "rustls", "stream"] }
+reqwest-middleware = { version = "0.5", features = ["multipart", "query"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+
+[lints.clippy]
+all = "allow"
